@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Space Shoppers</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="domc.css" />
+    <link rel="icon" href="ShoppingLogo.png" />
+  </head>
+  <body>
+    <script src="domc.js" async></script>
+    <script
+      src="https://kit.fontawesome.com/f6dcf461c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <header>
+      <h1>Space Shoppers</h1>
+      <div class="navbar">
+        <nav class="main-navbar">
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About us</a></li>
+            <li><a href="#Merch">Our Merch</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="About">
+        <div>
+          <h3>Who Are We?</h3>
+          <p>
+            The co-founders of Shoppers Space want to thank you for giving us
+            enough time to visit our website. <br />
+            We sell beautiful merch about Space theme, feel free to browse our
+            catalog!
+          </p>
+        </div>
+      </section>
+      <section id="Merch">
+        <h3>Catalog</h3>
+        <div class="goodies">
+          <div class="shop-item">
+            <img
+              src="spacemug.jpg"
+              alt="space mug picture"
+              height="230px"
+              width="230px"
+            />
+
+            <button onclick="Toggle()" id="btnh1" class="btn-heart">
+              <i class="fas fa-heart"></i>
+            </button>
+            <p>Space Mug</p>
+            <div class="shop-item-details">
+              <span>15 DT</span>
+              <button class="btn" type="button">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="shop-item">
+            <img
+              src="spacetshirt.jpeg"
+              alt="space t-shirt picture"
+              height="230px"
+              width="230px"
+            />
+            <button onclick="Toggle1()" class="btn-heart">
+              <i class="fas fa-heart"></i>
+            </button>
+            <p>Space T-Shirt</p>
+
+            <div class="shop-item-details">
+              <span>35 DT</span>
+              <button class="btn" type="button">Add To Cart</button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <img
+              src="spacenecklace.jpg"
+              alt="space necklace picture"
+              height="230px"
+              ;
+              width="230px"
+            />
+            <button onclick="Toggle1()" class="btn-heart">
+              <i class="fas fa-heart"></i>
+            </button>
+            <p>Space Necklace</p>
+            <div class="shop-item-details">
+              <span>20 DT</span>
+              <button class="btn" type="button">Add To Cart</button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <img
+              src="spacealbum.jpg"
+              alt="Space album picture"
+              height="230px"
+              width="230px"
+            />
+            <button onclick="Toggle1()" class="btn-heart">
+              <i class="fas fa-heart"></i>
+            </button>
+            <p>Space Album</p>
+            <div class="shop-item-details">
+              <span>12,5 DT</span>
+              <button class="btn" type="button">Add To Cart</button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <img
+              src="spaceposter.jpg"
+              alt="space poster picture"
+              height="230px"
+              width="230px"
+            />
+            <button onclick="Toggle1()" class="btn-heart">
+              <i class="fas fa-heart"></i>
+            </button>
+            <p>Space Poster</p>
+            <div class="shop-item-details">
+              <span>8 DT</span>
+              <button class="btn" type="button">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="cart-section">
+        <h4>CART</h4>
+        <div class="cart-elem">
+          <span class="cart-elem-one">ITEM</span>
+          <span class="cart-elem-two">PRICE</span>
+          <span class="cart-elem-three">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+          <div class="cart-row">
+            <div class="cart-item-first-col">
+              <img src="spacetshirt.jpeg" height="100px" width="100px" />
+              <span>Space T-shirt</span>
+            </div>
+
+            <span class="cart-price second-column">35 DT</span>
+            <div class="cart-item-thd-col">
+              <button class="btn-minus">-</button>
+              <span class="counter">1</span>
+              <button class="btn-plus">+</button>
+              <button class="btn-danger" type="button">Remove</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-row">
+          <div class="cart-item-first-col">
+            <img src="spacemug.jpg" height="100px" width="100px" />
+            <span>Space Mug</span>
+          </div>
+
+          <span class="cart-price second-column">15 DT</span>
+          <div class="cart-item-thd-col">
+            <button class="btn-minus">-</button>
+            <span class="counter">1</span>
+            <button class="btn-plus">+</button>
+            <button class="btn-danger" type="button">Remove</button>
+          </div>
+        </div>
+        <div class="totalp">
+          <div class="total">
+            <strong>Total = </strong>
+            <span>50 DT</span>
+          </div>
+          <button class="pur-btn" type="button">Purchase</button>
+        </div>
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <p>Author: B.K. Khawla</p>
+    </footer>
+  </body>
+</html>
