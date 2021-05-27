@@ -7,8 +7,7 @@ for (let i = 0; i < removeItem.length; i++) {
   });
 }
 function updateTotal() {
-  /*var cartItemsContainer = document.getElementsByClassName("cart-items")[0];
-  var cartRows = cartItemsContainer.getElementsByClassName("cart-rows");*/
+  
   let price = document.getElementsByClassName("cart-price");
   let quantity = document.getElementsByClassName("counter");
   let total = 0;
@@ -19,12 +18,7 @@ function updateTotal() {
     total =
       total + price[i].innerHTML.replace("DT", "") * quantity[i].innerHTML;
     console.log(total);
-    /* var cartrow = cartRows[i];
-    var pricetotal = cartrow.getElementsByClassName("cart-price");
-    var quantityelement = cartrow.getElementsByClassName("counter");
-    var price = parseFloat(priceElement.innerText.replace("DT", ""));
-    var quantity = quantityelement.innerHTML;
-    total = total + price * quantity;*/
+
   }
   let totalprice = document.querySelector(".totalp");
   totalprice.innerHTML = total;
@@ -49,7 +43,7 @@ for (var i = 0; i < plus.length; i++) {
   });
 }
 
-var buttonlike = document.getElementsByClassName("btn-heart");
+let buttonlike = document.getElementsByClassName("btn-heart");
 for (let i = 0; i < buttonlike.length; i++) {
   buttonlike[i].addEventListener("click", function () {
     if (buttonlike[i].style.color == "red") {
